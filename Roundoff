@@ -1,0 +1,17 @@
+#include <stdio.h>
+void main()
+{
+	float x;
+	int a,b;
+    scanf("%f",&x);
+    if(x<0)
+    {
+        printf("Not a Positive Number");
+    }
+	else
+	{
+	a = (int)(x+0.5);
+	printf("%d",a);
+    }
+	
+}

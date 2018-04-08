@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    char s[1000], i;
+int flag =0;
+    printf("Enter a word: ");
+    scanf("%s", s);
+
+    
+    
+    for (i = 0; s[i] != '\0'; ++i)
+    {
+        if (isdigit(s[i]))
+        {
+    flag=1;
+        }
+    }
+    if(flag==1)
+    printf ("Invalid");
+    else{
+    for(i = 0; s[i] != '\0'; ++i);
+    printf("%d", i);}
+    return 0;
+}

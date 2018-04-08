@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    int number, i, j=0, counter=0;
+
+    printf("Enter a positive integer: ");
+    scanf("%d",&number);
+
+    //printf("Factors of %d are: ", number);
+    for(i=1; i <= number; ++i)
+    {
+        counter++;
+        if (number%i == 0&& i%2==0)
+        {
+            
+            j++;
+           
+         // printf("%d ",i);
+        }
+    }
+    printf("%d",j);
+    return 0;
+}

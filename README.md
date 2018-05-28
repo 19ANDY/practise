@@ -1,4 +1,4 @@
-#Pointers and Memory Allocation
+#  Pointers and Memory Allocation
 
 When declaring a variable, the type given is the type of any expression which looks like the declaration. Thus, if we have the declarations
 int a, *b, c[], *(*d[])();
@@ -94,5 +94,3 @@ Space is returned to the system with the command
 
 free( pointer );
 For returning the space to the system, you always return exactly what you were given, i.e., the exact pointer that malloc gave you.  You cannot return a portion of an allocation.  Thus there should be a perfect one-to-one correspondence between calls to malloc and calls to free.
-
-Last modified: Mar 25, 2016

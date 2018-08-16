@@ -10,21 +10,27 @@ int main()
     string str;
     getline(cin,str);
   
-    vector<int> vect;
+    vector<char> vect;
 
-    stringstream ss(str);
+    stringstream s(str);
 
-    int i;
+    char i;
 
-    while (ss >> i)
+    while (s >> i)
     {
-        vect.push_back(i);
+        cout<<i;
+        vect.push_back(i);//
 
-        if (ss.peek() == ',')
-            ss.ignore();
+        if (s.peek() == ',')
+        {
+            s.ignore();
+            cout<<endl;
+        }
     }
 
-    for (i=0; i< vect.size(); i++)
-        cout << vect.at(i)<<endl;
+   /* for (i=0; i<vect.size(); i++)
+    {  cout << vect.at(i); 
+      
+     cout <<endl;
+    }*/
 }
-
